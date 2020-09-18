@@ -62,10 +62,10 @@ const Dashboard = () => (
           </ol>
           <div className="carousel-inner" role="listbox">
             <div className="carousel-item active">
-              <img className="d-block img-fluid" src="https://blog.homesalive.ca/hs-fs/hubfs/Blog%20Images%20(2018)/Tough%20Dog%20Toys%20for%20Extreme%20Chewers/planet-dog-orbee-tuff-guru.jpg?width=900&name=planet-dog-orbee-tuff-guru.jpg" alt="First slide" width="900" height="300"/>
+              <img className="d-block img-fluid" src="https://i0.wp.com/petchampion.com/wp-content/gallery/dogs-toys-oxford/dogs-toys-toys20.jpg" alt="First slide" width="900" height="300"/>
             </div>
             <div className="carousel-item">
-              <img className="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide"/>
+              <img className="d-block img-fluid" src="https://i2.wp.com/petchampion.com/wp-content/gallery/dogs-toys-rubber/dogs-toys-toys7.jpg" alt="Second slide"/>
             </div>
             <div className="carousel-item">
               <img className="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide"/>
