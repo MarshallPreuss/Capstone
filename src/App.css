@@ -22,3 +22,8 @@ body {
   min-height: 100%;
   min-width: 1024px;
 }
+
+.aboutDes{
+  background-color: slategrey;
+  color: white
+}
