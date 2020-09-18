@@ -15,12 +15,19 @@ const Dashboard = () => (
       <div className="collapse navbar-collapse" id="navbarResponsive">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item active">
-            <a className="nav-link" href="#">Home
+            <a className="nav-link" href="#">
+            <Link to={"/"} className="homeBut">
+      Home
+    </Link>
               <span className="sr-only">(current)</span>
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="./components/About">About</a>
+            <a className="nav-link" href="./components/About">
+            <Link to={"/about"} className="homeBut">
+      About
+    </Link>
+            </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">Services</a>
