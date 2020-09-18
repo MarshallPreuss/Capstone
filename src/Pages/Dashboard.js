@@ -20,7 +20,7 @@ const Dashboard = () => (
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">About</a>
+            <a className="nav-link" href="./components/About">About</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">Services</a>
@@ -103,7 +103,7 @@ const Dashboard = () => (
   
   <footer className="py-5 bg-dark">
     <div className="container">
-      <p className="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+      <p className="m-0 text-center text-white">Copyright &copy; Animal Palace 2020</p>
     </div>
    
   </footer>
