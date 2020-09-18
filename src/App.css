@@ -16,3 +16,9 @@
 body {
   background-color: rgb(52, 211, 230);
 }
+
+.aboutMain{
+  background-image: url("https://img.freepik.com/free-vector/bons-foot-prints-pattern-background_1374-18.jpg?size=338&ext=jpg");
+  min-height: 100%;
+  min-width: 1024px;
+}
