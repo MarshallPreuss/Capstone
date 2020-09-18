@@ -2,11 +2,20 @@ import React from 'react';
 import Dashboard from './Pages/Dashboard'
 import './App.css';
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from 'react-router-dom';
+
+import About from './components/About'
+
 function App() {
   return (
     <div className="App">
       <Router>
-    <Nav />
+
       <Switch>
         <Route exact path='/' component={Dashboard}/>
 

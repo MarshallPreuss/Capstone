@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const About = () => {
+const About = () => {
 return(
     <div class="modal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
@@ -25,3 +25,5 @@ return(
   </div>
 )
 }
+
+export default About;
