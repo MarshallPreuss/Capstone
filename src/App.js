@@ -5,7 +5,16 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Dashboard/>
+      <Router>
+    <Nav />
+      <Switch>
+        <Route exact path='/' component={Dashboard}/>
+
+        <Route exact path='/about' component={About} />
+
+        <Redirect to='/' />
+      </Switch>
+    </Router>
     </div>
   );
 }
