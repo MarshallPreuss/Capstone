@@ -68,7 +68,7 @@ const Dashboard = () => (
               <img className="d-block img-fluid" src="https://i2.wp.com/petchampion.com/wp-content/gallery/dogs-toys-rubber/dogs-toys-toys7.jpg" alt="Second slide"/>
             </div>
             <div className="carousel-item">
-              <img className="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide"/>
+              <img className="d-block img-fluid" src="https://hstt.org/sites/default/files/styles/banner_sub/public/banners/btt20160087.jpg?itok=TVQo8-sL" alt="Third slide"/>
             </div>
           </div>
           <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
