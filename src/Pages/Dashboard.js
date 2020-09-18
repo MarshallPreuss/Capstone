@@ -62,7 +62,7 @@ const Dashboard = () => (
           </ol>
           <div className="carousel-inner" role="listbox">
             <div className="carousel-item active">
-              <img className="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide"/>
+              <img className="d-block img-fluid" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/indoor-dog-toys-1587002073.jpg?crop=1.00xw:0.751xh;0,0.161xh&resize=1200:*" alt="First slide" width="900" height="300"/>
             </div>
             <div className="carousel-item">
               <img className="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide"/>
