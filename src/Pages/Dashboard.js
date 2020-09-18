@@ -46,7 +46,7 @@ const Dashboard = () => (
         <div className="list-group">
           <a href="#" className="list-group-item">Toys</a>
           <a href="#" className="list-group-item">Food</a>
-          <a href="#" className="list-group-item">Category 3</a>
+          <a href="#" className="list-group-item">Grooming</a>
         </div>
 
       </div>
