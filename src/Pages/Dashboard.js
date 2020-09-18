@@ -5,7 +5,7 @@ import ItemPage from './ItemPage';
 
 const Dashboard = () => (
 
-    <div>
+    <div className="main">
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div className="container">
       <a className="navbar-brand" href="#">Animal Palace</a>
