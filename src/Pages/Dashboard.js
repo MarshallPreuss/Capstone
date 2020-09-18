@@ -8,7 +8,7 @@ const Dashboard = () => (
     <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div className="container">
-      <a className="navbar-brand" href="#">Start Bootstrap</a>
+      <a className="navbar-brand" href="#">Animal Palace</a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
@@ -42,9 +42,9 @@ const Dashboard = () => (
 
       <div className="col-lg-3">
 
-        <h1 className="my-4">Shop Name</h1>
+        <h1 className="my-4"> Animal Palace</h1>
         <div className="list-group">
-          <a href="#" className="list-group-item">Category 1</a>
+          <a href="#" className="list-group-item">Toys</a>
           <a href="#" className="list-group-item">Category 2</a>
           <a href="#" className="list-group-item">Category 3</a>
         </div>
