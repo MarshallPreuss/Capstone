@@ -1,6 +1,7 @@
 import React from 'react';
 import Dashboard from './Pages/Dashboard'
 import About from './components/About'
+import Service from './components/Service'
 import './App.css';
 
 import {
@@ -19,6 +20,8 @@ function App() {
         <Route exact path='/' component={Dashboard}/>
 
         <Route exact path='/about' component={About} />
+
+        <Route exact path='/service' component={Service} />
 
         <Redirect to='/' />
       </Switch>

@@ -30,7 +30,11 @@ const Dashboard = () => (
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Services</a>
+            <a className="nav-link" href="./components/Service">
+            <Link to={"/service"} className="homeBut">
+      Services
+    </Link>
+            </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">Contact</a>
@@ -40,6 +44,7 @@ const Dashboard = () => (
     </div>
   </nav>
 
+  <br />
   <br />
   <br />
 
@@ -52,7 +57,7 @@ const Dashboard = () => (
 
       <div className="col-lg-3">
 
-        <h1 className="my-4"> Animal Palace</h1>
+        <h1 className="my-4" className="title"> Animal Palace</h1>
         <div className="list-group">
           <a href="#" className="list-group-item">Toys</a>
           <a href="#" className="list-group-item">Food</a>

@@ -27,3 +27,9 @@ body {
   background-color: slategrey;
   color: white
 }
+
+.title{
+  background-color: lightblue;
+  border-radius: 15px;
+  padding: 3px;
+}
