@@ -2,8 +2,30 @@ import React from 'react';
 
 import { Link } from 'react-router-dom'
 
+//import ReactHtmlParser from 'react-html-parser'
+
 export const Detail = ({detail}) => {
-var html = (
+
+
+var iC1 = [];
+var iC2 = [];
+
+for (var i = 0; i < detail.images.length; i++) {
+  //iC1
+  if(i > 0) {
+    iC1.push( (<li data-target="#carouselExampleIndicators" data-slide-to={i}></li>) );
+  } else {
+    iC1.push( (<li data-target="#carouselExampleIndicators" data-slide-to={i} className="active"></li>) );
+  }
+  //iC2
+  if(i > 0) {
+    iC2.push( (<div className="carousel-item"> <img className="d-block img-fluid" src={detail.images[i]} /> </div>) );
+  } else {
+    iC2.push( (<div className="carousel-item active"> <img className="d-block img-fluid" src={detail.images[i]} /> </div>) );
+  }
+}
+
+ return(
 
   <div className="main">
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -48,7 +70,6 @@ var html = (
   <br />
   <br />
 
-  
   <div className="container">
 
     <div className="row">
@@ -70,23 +91,13 @@ var html = (
       <div className="col-lg-9">
 
         <div id="carouselExampleIndicators" className="carousel slide my-4" data-ride="carousel">
-          <ol className="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div className="carousel-inner" role="listbox">
-            <div className="carousel-item active">
-              <img className="d-block img-fluid" src="https://i0.wp.com/petchampion.com/wp-content/gallery/dogs-toys-oxford/dogs-toys-toys20.jpg" alt="First slide" width="900" height="300"/>
-            </div>
-            <div className="carousel-item">
-              <img className="d-block img-fluid" src="https://i2.wp.com/petchampion.com/wp-content/gallery/dogs-toys-rubber/dogs-toys-toys7.jpg" alt="Second slide"/>
-            </div>
-            <div className="carousel-item">
-              <img className="d-block img-fluid" src="https://hstt.org/sites/default/files/styles/banner_sub/public/banners/btt20160087.jpg?itok=TVQo8-sL" alt="Third slide"/>
-            </div>
-          </div>
-          <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <ol className="carousel-indicators" >
+          {iC1}
+        </ol>
+        <div className="carousel-inner" role="listbox">
+          {iC2}  
+        </div>
+            <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
             <span className="sr-only">Previous</span>
           </a>
@@ -125,7 +136,7 @@ var html = (
 
   </div>
   
-
+  {/* { ReactHtmlParser(detail.description) } */}
   
   <footer className="py-5 bg-dark">
     <div className="container">
@@ -142,9 +153,7 @@ var html = (
   
       
       
-);
-
-return (html);
+)
 }
 
 //export default Details;
