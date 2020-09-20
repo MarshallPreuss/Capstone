@@ -23,7 +23,7 @@ const renderDetails = () => {
     if(hasError){
         return <p>Unable to display Posts</p>
     }
-    return details.map((category)=> <Detail key={category.id} category={category} />)
+    return details.map((detail)=> <Detail key={detail.id} detail={detail} />)
     }
 
     return(

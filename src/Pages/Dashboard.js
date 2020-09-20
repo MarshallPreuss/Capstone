@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ItemPage from './ItemPage';
+import DetailPage from './DetailPage';
 //import CategoryPage from './DetailPage';
 
 const Dashboard = () => (
@@ -98,7 +99,7 @@ const Dashboard = () => (
 
         <div className="row">
 
-          <ItemPage />
+          <DetailPage/>
 
         </div>
         

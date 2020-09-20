@@ -30,12 +30,12 @@ export function fetchDetails(){
 
         try{
             const res = await
-            fetch('http://localhost:8080/capstone/product/'+ id)
+            fetch('http://localhost:8080/capstone/product/1')
             const data = await res.json()
 
 // Make sure you send a json Array for whatever API URL being used
 
-            dispatch(getDetailsSuccess(data.details))
+            dispatch(getDetailsSuccess(data))
 
         } catch (error) {
             dispatch(getDetailsFailure())

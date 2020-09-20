@@ -25,7 +25,9 @@ body {
 
 .aboutDes{
   background-color: slategrey;
-  color: white
+  color: white;
+  border-radius: 15px;
+  padding: 3px;
 }
 
 .title{
