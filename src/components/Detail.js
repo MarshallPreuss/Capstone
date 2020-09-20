@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom'
 
-//import ReactHtmlParser from 'react-html-parser'
+import ReactHtmlParser from 'react-html-parser'
 
 export const Detail = ({detail}) => {
 
@@ -136,7 +136,7 @@ for (var i = 0; i < detail.images.length; i++) {
 
   </div>
   
-  {/* { ReactHtmlParser(detail.description) } */}
+  { ReactHtmlParser(detail.description) }
   
   <footer className="py-5 bg-dark">
     <div className="container">
@@ -145,14 +145,7 @@ for (var i = 0; i < detail.images.length; i++) {
    
   </footer>
 
-</div>
-
-
-
-
-  
-      
-      
+</div>    
 )
 }
 

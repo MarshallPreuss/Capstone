@@ -30,7 +30,7 @@ export function fetchDetails(){
 
         try{
             const res = await
-            fetch('http://localhost:8080/capstone/product/1')
+            fetch('http://localhost:8080/capstone/product/7')
             const data = await res.json()
 
 // Make sure you send a json Array for whatever API URL being used

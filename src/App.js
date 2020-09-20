@@ -25,7 +25,7 @@ function App() {
 
         <Route exact path='/service' component={Service} />
 
-        <Route exact path='/product/{item.id}' component={DetailPage} />
+        <Route exact path='/product/:id' component={DetailPage} />
 
         <Redirect to='/' />
       </Switch>

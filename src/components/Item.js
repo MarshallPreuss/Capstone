@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 export const Item = ({item}) => {
+  var url = "/product/" + item.id
 return(
         <div className="col-lg-4 col-md-6 mb-4" >
             <div className="card h-100">
@@ -10,7 +11,7 @@ return(
               <div className="card-body">
                 <h4 className="card-title">
                   <a href="#">
-                  <Link to={"/product/{item.id}"} className="homeBut">
+                  <Link to={`/product/${item.id}`} className="homeBut">
                   {item.title}
                   </Link></a>
                 </h4>
