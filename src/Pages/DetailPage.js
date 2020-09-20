@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 // Bring in the Asynchronous FetchPosts action
 
-import {fetchDetails} from '../actions/detailActions';
+import {fetchDetails} from '../actions/detailAction';
 
 import { Detail } from '../components/Detail';
 
@@ -23,17 +23,17 @@ const renderDetails = () => {
     if(hasError){
         return <p>Unable to display Posts</p>
     }
+
+    if(details) {
     return details.map((detail)=> <Detail key={detail.id} detail={detail} />)
+    } else {
+        return [];
+    }
+
     }
 
     return(
-        <section>
-            <h1 className="catTitle">Details</h1>
-            <br/>
-            
-    <br/>
-            {renderDetails()}
-        </section>
+        renderDetails()
     )
 }
 

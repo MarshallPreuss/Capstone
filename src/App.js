@@ -2,6 +2,7 @@ import React from 'react';
 import Dashboard from './Pages/Dashboard'
 import About from './components/About'
 import Service from './components/Service'
+import DetailPage from './Pages/DetailPage';
 import './App.css';
 
 import {
@@ -10,6 +11,7 @@ import {
   Route,
   Redirect
 } from 'react-router-dom';
+
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route exact path='/about' component={About} />
 
         <Route exact path='/service' component={Service} />
+
+        <Route exact path='/product/{item.id}' component={DetailPage} />
 
         <Redirect to='/' />
       </Switch>

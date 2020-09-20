@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom'
+
 export const Item = ({item}) => {
 return(
         <div className="col-lg-4 col-md-6 mb-4" >
@@ -7,7 +9,10 @@ return(
               <a href="#"><img className="card-img-top" src={item.thumbnail} alt=""/></a>
               <div className="card-body">
                 <h4 className="card-title">
-                  <a href="#">{item.title}</a>
+                  <a href="#">
+                  <Link to={"/product/{item.id}"} className="homeBut">
+                  {item.title}
+                  </Link></a>
                 </h4>
                 <h5>{item.price}</h5>
                 <p className="card-text"></p>

@@ -35,7 +35,7 @@ export function fetchDetails(){
 
 // Make sure you send a json Array for whatever API URL being used
 
-            dispatch(getDetailsSuccess(data))
+            dispatch(getDetailsSuccess([data]))
 
         } catch (error) {
             dispatch(getDetailsFailure())
