@@ -95,7 +95,7 @@ for (var i = 0; i < detail.images.length; i++) {
           {iC1}
         </ol>
         <div className="carousel-inner" role="listbox">
-          {iC2}  
+          <div className="iC2">{iC2}</div>
         </div>
             <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
